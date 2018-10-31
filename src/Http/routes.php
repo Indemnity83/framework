@@ -1,13 +1,12 @@
 <?php
 
 // API Routes ...
-Route::group([
-    'prefix' => 'api',
-    'middleware' => 'api',
-    'name' => 'api.',
-    'namespace' => 'Solder\Framework\Http\Controllers',
-], function () {
+Route::prefix('api')
+    ->name('api.')
+    ->middleware('api')
+    ->namespace('Solder\Framework\Http\Controllers')
+    ->group(function () {
 
-    // Modpack Routes ...
-    Route::apiResource('modpacks', 'ModpacksController');
-});
+        // Modpack Routes ...
+        Route::apiResource('modpacks', 'ModpacksController');
+    });
