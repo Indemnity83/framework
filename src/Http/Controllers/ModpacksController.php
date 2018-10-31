@@ -3,9 +3,9 @@
 namespace Solder\Framework\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Routing\Controller as BaseController;
 use Solder\Framework\Models\Modpack;
 use Spatie\QueryBuilder\QueryBuilder;
+use Illuminate\Routing\Controller as BaseController;
 
 class ModpacksController extends BaseController
 {

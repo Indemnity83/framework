@@ -1,4 +1,5 @@
 <?php
+
 namespace Solder\Framework\Tests;
 
 use PHPUnit\Framework\TestCase;
